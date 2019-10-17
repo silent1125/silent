@@ -1,0 +1,54 @@
+package com.lanou;
+
+import java.util.Random;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		//Random  系统类型
+		Random random = new Random();
+		
+		//1.对象--类的实例，是确定存在的事物
+		//Person自定义类型
+		Person p1 = new Person();
+		p1.name = "王二狗子";
+		p1.sex = "男";
+		p1.age = 18;
+		p1.run();
+		p1.study();
+		
+		Person p2 = new Person();
+		p2.name = "翠花";
+		p2.sex = "女生";
+		p2.age = 16;
+		p2.run();
+		p2.study();
+//--------------------------------
+		Dog dog1 = new Dog();
+		dog1.setKind("泰迪");
+		dog1.setSex("公的");
+		dog1.setColor("棕色");
+		dog1.setAge(2);
+		
+		String kind1 = dog1.getKind();
+		System.out.println(dog1.getKind() + " " + dog1.getColor()
+		 + " " + dog1.getSex() + " " + dog1.getAge());
+		
+		Dog dog2 = new Dog();
+		dog2.setKind("金毛");
+		dog2.setSex("母的");
+		dog2.setColor("金黄色");
+		dog2.setAge(3);
+		System.out.println(dog2.getKind());
+	
+		
+		Dog dog3 = new Dog("拉布拉多", "公的", "白色", 2);
+		dog3.setColor("黑色");
+		System.out.println(dog3.getKind());
+		
+//直接打印对象------
+		System.out.println(dog3);
+	}
+
+}
+;
