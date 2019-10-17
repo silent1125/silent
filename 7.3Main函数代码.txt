@@ -3,7 +3,7 @@ package com.lanou;
 import java.util.Random;
 
 public class Main {
-	
+	********************
 	public static void main(String[] args) {
 		//Random  系统类型
 		Random random = new Random();
